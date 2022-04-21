@@ -14,9 +14,22 @@ public class Rational {
     }
 
     //Reducing the fraction to is lowest terms
-    private void reduce(){
+    private void reduceRraction(){
         int divisor = gcf(numerator,denominator);
         numerator= numerator/divisor;
         denominator= denominator/divisor;
+    }
+
+    private int gcf(int x, int y){
+        int result;
+        if(x<y){
+            result = x;
+        }
+        else{
+            result = y;
+        }
+        while(x%result != 0 || y%result != 0)
+            result--;
+        return result;
     }
 }
