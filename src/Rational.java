@@ -50,4 +50,14 @@ public class Rational {
         else
             System.out.println("The 2 rational numbers are not equal");
     }
+    // the divide method
+
+    public  Rational divide(Rational other){
+        int newNumerator = this.numerator*other.denominator;
+        int newDenominator = this.denominator* other.numerator;
+
+        Rational r =new Rational(newNumerator, newDenominator);
+        return r;
+
+    }
 }
