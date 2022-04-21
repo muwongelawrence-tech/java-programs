@@ -69,4 +69,13 @@ public class Rational {
         Rational r =new Rational(newNumerator, newDenominator);
         return r;
     }
+
+    // subtraction
+    public Rational subtraction(Rational other){
+        int newNumerator = (this.numerator*other.denominator) - (this.denominator*other.numerator);
+        int newDenominator = (this.denominator)*(other.denominator);
+
+        Rational r =new Rational(newNumerator,newDenominator);
+        return r;
+    }
 }
