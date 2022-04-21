@@ -41,4 +41,13 @@ public class Rational {
         return r;
 
     }
+
+    //the equal method
+    public  void  equal(Rational other){
+        if(this.numerator==other.numerator&&this.denominator==other.denominator){
+            System.out.println("the 2 rational numbers are equal");
+        }
+        else
+            System.out.println("The 2 rational numbers are not equal");
+    }
 }
