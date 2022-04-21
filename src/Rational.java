@@ -32,4 +32,13 @@ public class Rational {
             result--;
         return result;
     }
+
+    public  Rational multiply(Rational other){
+        int newNumerator = this.numerator*other.numerator;
+        int newDenominator = this.denominator* other.denominator;
+
+        Rational r = new Rational(newNumerator,newDenominator);
+        return r;
+
+    }
 }
