@@ -4,6 +4,7 @@ public class Rational {
     public Rational( int numerator , int denominator){
         this.numerator = numerator;
         this.denominator = denominator;
+        reduceRraction();
     }
 
 
@@ -77,5 +78,10 @@ public class Rational {
 
         Rational r =new Rational(newNumerator,newDenominator);
         return r;
+    }
+
+    // output of the fraction
+    public String toString() {
+        return  numerator + "/" + denominator;
     }
 }
