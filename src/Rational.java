@@ -89,6 +89,14 @@ public class Rational {
         this.denominator = denominator;
     }
 
+    public int getNumerator(){
+        return this.numerator;
+    }
+
+    public int getDenominator(){
+        return this.denominator;
+    }
+
     // output of the fraction
     public String toString() {
         return  numerator + "/" + denominator;
