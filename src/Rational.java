@@ -44,12 +44,12 @@ public class Rational {
     }
 
     //the equal method
-    public  void  equal(Rational other){
-        if(this.numerator==other.numerator&&this.denominator==other.denominator){
-            System.out.println("The two rational numbers are equal");
+    public  String equal(Rational other){
+        if(this.numerator==other.numerator && this.denominator==other.denominator){
+            return "The two rational numbers are equal.";
         }
         else
-            System.out.println("The two rational numbers are not equal");
+            return "The two rational numbers are not equal.";
     }
     // the divide method
 
