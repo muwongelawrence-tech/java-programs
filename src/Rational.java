@@ -80,6 +80,15 @@ public class Rational {
         return r;
     }
 
+    // setting the numerator and denominator
+    public void setNumerator(int numerator){
+        this.numerator = numerator;
+    }
+
+    public void setDenominator(int denominator){
+        this.denominator = denominator;
+    }
+
     // output of the fraction
     public String toString() {
         return  numerator + "/" + denominator;
