@@ -46,10 +46,10 @@ public class Rational {
     //the equal method
     public  String equal(Rational other){
         if(this.numerator==other.numerator && this.denominator==other.denominator){
-            return "The two rational numbers are equal.";
+            return " are equal.";
         }
         else
-            return "The two rational numbers are not equal.";
+            return " are not equal.";
     }
     // the divide method
 

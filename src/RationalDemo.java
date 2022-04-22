@@ -1,16 +1,16 @@
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class RationalDemo {
     public static void main(String[] args){
-          System.out.println("hello lawrence");
+        Scanner input = new Scanner(System.in);
+          System.out.print("Enter Your name:");
+          String name = input.nextLine();
+        System.out.println("Hello " + name + ",  welcome to a program of Rational Data type.");
 
         Rational f1 = new Rational(1,2);
-        Rational f2 =new Rational(2,3);
-        Rational f3 =new Rational(2,4);
+        Rational f2 = new Rational(2,3);
+        Rational f3 = new Rational(2,4);
+        Rational f4 = new Rational(1,2);
 
         System.out.println("fraction 1 is " + f1 + " and fraction 2 is " + f2);
         System.out.println("Sum of the two fractions is " + f1.add(f2) );
@@ -19,7 +19,8 @@ public class RationalDemo {
         System.out.println("Quotient of the two fractions is " + f1.divide(f2) );
 
         // Testing Equality of two rational numbers.
-        System.out.println(f2.equal(f3));
+        System.out.println("Fractions "+ f2 + " and "+ f3 +  f2.equal(f3));
+        System.out.println("Fractions "+ f1 + " and "+ f4 +  f1.equal(f4));
 
     }
 }
