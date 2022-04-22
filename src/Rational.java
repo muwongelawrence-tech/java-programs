@@ -46,10 +46,10 @@ public class Rational {
     //the equal method
     public  void  equal(Rational other){
         if(this.numerator==other.numerator&&this.denominator==other.denominator){
-            System.out.println("the 2 rational numbers are equal");
+            System.out.println("The two rational numbers are equal");
         }
         else
-            System.out.println("The 2 rational numbers are not equal");
+            System.out.println("The two rational numbers are not equal");
     }
     // the divide method
 
@@ -63,7 +63,7 @@ public class Rational {
     }
 
     // addition
-    public Rational addition(Rational other){
+    public Rational add(Rational other){
         int newNumerator = (this.numerator*other.denominator)+(this.denominator*other.numerator);
         int newDenominator = (this.denominator)*(other.denominator);
 
@@ -72,7 +72,7 @@ public class Rational {
     }
 
     // subtraction
-    public Rational subtraction(Rational other){
+    public Rational subtract(Rational other){
         int newNumerator = (this.numerator*other.denominator) - (this.denominator*other.numerator);
         int newDenominator = (this.denominator)*(other.denominator);
 
